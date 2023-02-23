@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Dashboard - Gestor Citas</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <button id="showBoard" class="navbar-toggler-button" type="button">
+                    <i class="icon-reorder"></i>
+                </button>
+                <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Aplicaci&oacute;n
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard bg-primary">
+        <div class="dashboard-corner">
+            <button id="hideBoard" class="navbar-toggler-button-2">
+                <i class="icon-reorder"></i> Ocultar
+            </button>
+        </div>
+        
+        <div class="user-avatar-view">
+            <div class="avatar-container">
+                <img src="assets/img/user.png" class="user-avatar" />
+                <div class="user-name">
+                    <p>DNI: <span id="loggedDni"></span></p>
+                    <p><span id="loggedName"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-buttons">
+            <a class="sidebar-nav-button" to="agenda">Agenda</a>
+            <a class="sidebar-nav-button" to="logout">Cerrar sesi&oacute;n</a>
+        </div>
+
+    </div>
+    <div class="pageContent"></div>
+
+    <script src="../../config.js"></script>
+
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert2.js"></script>
+    <script src="assets/js/lodash.js"></script>
+
+    <script src="assets/js/jspdf.umd.min.js"></script>
+    <script src="assets/js/jspdf.plugin.autotable.js"></script>
+
+    <script src="assets/js/js.cookie.min.js"></script>
+    
+    <script src="assets/js/dashboard.js"></script>
+
+
+    <!--Application scripts (doesn't recommend this on that way, but it doesn't work on anothers) -->
+    <script type="text/javascript" src="views/Schedule/Schedule.js"></script>
+    <script type="text/javascript" src="views/AddEditSchedule/AddEditSchedule.js"></script>
+</body>
+
+</html>

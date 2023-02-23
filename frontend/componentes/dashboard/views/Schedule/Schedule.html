@@ -1,0 +1,60 @@
+<div class="modal fade" id="addEditModal" role="dialog">
+</div>
+
+<div class="container">
+    <h2>Agenda</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-3 align-end">
+            <button class="btn btn-success" id="newElement"><i class="icon-plus"></i> Agregar</button>
+            <button class="btn btn-primary" id="exportPDF"><i class="icon-file"></i> Exportar a PDF</button>
+        </div>
+        <div class="col-md-9 row">
+            <div class="form-group col-md-3" style="align-self: flex-end;">
+                <label for="dateFrom"><i class="icon-user"></i> Empleado:</label>
+                <select name="filterByEmployee" id="filterByEmployee" class="form-control combobox">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="dateFrom"><i class="icon-time"></i> Desde:</label>
+                <input id="filterDateFrom" type="date" class="form-control">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="dateTo"><i class="icon-time"></i> Hasta:</label>
+                <input id="filterDateTo" type="date" class="form-control">
+            </div>
+            <div class="form-group col-md-3 align-end">
+                <button id="filterDatesButton" class="btn btn-primary"><i class="icon-search" role="button"></i>
+                    Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <br /><br />
+    <div class="table table-responsive table-bordered">
+        <table class="table table-hover" id="schedule_table">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Nombre completo</th>
+                    <th scope="col">Tel&eacute;fono</th>
+                    <th scope="col">Observaci&oacute;n</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+        </table>
+    </div>
+
+    <div style="display: table; margin: auto;">
+        <nav>
+            <ul class="pagination" id="eventPagination"></ul>
+        </nav>
+    </div>
+
+</div>

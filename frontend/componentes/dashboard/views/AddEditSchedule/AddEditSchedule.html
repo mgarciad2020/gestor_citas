@@ -1,0 +1,42 @@
+<form id="addEditScheduleForm" class="form-horizontal">
+    <div class="container">
+        <div class="form-group">
+            <label for="existentPerson">Persona existente</label>
+            <select class="form-control combobox" id="existentPerson">
+                <option value="">Seleccione una persona</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="idDNI" class="form-label">DNI:</label>
+            <input type="text" class="form-control" id="idDNI">
+        </div>
+        <div class="form-group">
+            <label for="idNames" class="form-label">Nombre(s):</label>
+            <input type="text" class="form-control" id="idNames">
+        </div>
+        <div class="form-group">
+            <label for="idLastNames" class="form-label">Apellido(s):</label>
+            <input type="text" class="form-control" id="idLastNames">
+        </div>
+        <div class="form-group">
+            <label for="IdTelephone" class="form-label">Tel&eacute;fono:</label>
+            <input type="text" class="form-control" id="IdTelephone">
+        </div>
+        <div class="form-group">
+            <label for="idDateTime" class="form-label">Fecha y hora:</label>
+            <input type="datetime-local" class="form-control" id="idDateTime">
+        </div>
+        <div class="form-group">
+            <label for="idSubject" class="form-label">Comentarios:</label>
+            <textarea class="form-control" rows="6" cols="10" id="idSubject"></textarea>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+
+    //Prevent submitting because the functionality doesn't be handled here.
+    $("#addEditScheduleForm").on("submit", (evt) => {
+        evt.preventDefault();
+    });
+</script>
